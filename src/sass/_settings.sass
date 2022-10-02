@@ -1,0 +1,48 @@
+$brown-900: #632626
+$brown-700: #9D5353
+$brown-500: #BF8B67
+$light-brown: #DACC96
+
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto&display=swap')
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    // éviter que l'utilisateur ne séléctionne les éléments
+    -moz-user-select: none
+    -webkit-user-select: none
+    -ms-user-select: none
+    user-select: none
+    -webkit-user-drag: none
+    -khtml-user-drag: none
+    -moz-user-drag: none
+    -o-user-drag: none
+    user-drag: none
+
+body 
+    font-family: 'Roboto', sans-serif
+    font-size: 16px 
+    animation: fadeInAnimation ease 3s
+    animation-iteration-count: 1
+    animation-fill-mode: forwards
+  
+@keyframes fadeInAnimation 
+    0% 
+        opacity: 0
+    
+    100% 
+        opacity: 1
+
+input::-webkit-input-placeholder 
+    color: $light-brown                 
+                
+input:-moz-placeholder 
+    color: $light-brown                
+                
+input::-moz-placeholder 
+    color: $light-brown                  
+                
+input:-ms-input-placeholder 
+    color: $light-brown   
+             

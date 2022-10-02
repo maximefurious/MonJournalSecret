@@ -1,0 +1,91 @@
+main
+    .cadre
+        .writing 
+            p
+                white-space: nowrap
+                overflow: hidden
+                border-right: 4px solid
+                padding-right: .25em
+                animation: type 1s steps(28), blink .5s step-end infinite alternate
+                animation-delay: .25s
+                font-family: 'MonteCarlo', cursive
+                font-size: 8rem
+
+            display: inline-block
+
+        .inscrire
+            h1
+                padding: 1em
+
+            input      
+                border: none
+                width: 100%
+                height: 4em
+                outline: none 
+                background-color: $brown-700
+                color: $light-brown
+                padding: 1em
+
+            input[type="text"],
+            input[type="password"]
+                &:focus
+                    animation: shake 1s forwards
+                    border-color: $brown-900
+                border-bottom: 2px solid $light-brown
+            input[type="submit"]
+                &:hover
+                    color: $light-brown
+                    background-color: $brown-900
+                    transition-property: background-color
+                    transition-timing-function: ease-in-out
+                    transition-duration: .5s
+                background-color: $brown-500
+                color: $brown-900
+            .form-group
+                width: 100%
+                height: 4em
+            
+            display: flex
+            align-items: center
+            justify-content: start
+            flex-direction: column
+            width: 40%
+            
+
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 80%
+        height: 80%
+        background-color: $brown-700
+        
+        color: $light-brown
+        border: 4px solid $brown-900
+
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 75vh
+    background-color: $light-brown
+
+@keyframes blink 
+    50% 
+        border-color: transparent
+
+@keyframes type 
+    from 
+        width: 0
+    to 
+        width: 100%
+    
+// animation when clicking an input field 
+@keyframes shake 
+    0% 
+        transform: translateX(0)
+    10% 
+        transform: translateX(-10px)
+    20% 
+        transform: translateX(10px)
+    30% 
+        transform: translateX(0)
+    

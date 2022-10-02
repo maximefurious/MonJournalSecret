@@ -1,0 +1,11 @@
+{
+    "name": "sae203",
+    "version": "1.0.0",
+    "description": "Projet de sae reseau, creation d'un site web grâce à la technologie apache, php et mysql sous debian",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./src/sass/main.scss:./src/sass/main.css"
+    },
+    "author": "G21",
+    "license": "ISC"
+}
